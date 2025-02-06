@@ -1,0 +1,156 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Additional custom settings here...
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Allen Li} \\ \vspace{1pt}
+    \small 778-896-8628 $|$ \href{mailto:allenli9417@gmail.com}{\underline{allenli9417@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/allen-li-5667b8248}{\underline{linkedin.com/in/allen-li-5667b8248}} $|$
+    \href{https://github.com/Allenli33}{\underline{github.com/Allenli33}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {British Columbia Institute of Technology}{Vancouver, BC}
+      {Computer Information Technology Diploma (CIT) GPA: 86/100}{Jan 2022 -- Dec 2023}
+    \resumeSubheading
+      {Kwantlen Polytechnic University}{Vancouver, BC}
+      {General Studies}{Sep. 2017 -- Sep 2019}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: \textbf{Python}, \textbf{JavaScript}, HTML/CSS, SQL, Bash, R} \\
+     \vspace{2mm}  % Adjust the space as needed
+
+     \textbf{Frameworks/Libraries}{: Flask, React, NextJS, Node.js, pandas, NumPy} \\
+     \vspace{2mm}  % Adjust the space as needed
+
+     \textbf{Tools \& Platforms}{: Docker, Kubernetes, Git, Postman, Apache-jmeter, Terraform, Ansible, Cloud Computing (AWS, Azure, Google Cloud), sonarqube Kafka, MongoDB, MySQL, Nginx, Linux} \\
+     \vspace{2mm}  % Adjust the space as needed
+
+     \textbf{DevOps \& CI/CD}{: Jenkins, GitLab-CI, emphasizing CI/CD practices for streamlined deployment processes} \\
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+  \resumeProjectHeading
+  {\textbf{Personal Web Portfolio} $|$ \emph{React, Next.js, Tailwind CSS}}{Recent Project}
+  \resumeItemListStart
+    \resumeItem{Developed a comprehensive portfolio website, showcasing projects, skills, and educational background.}
+    \resumeItem{Utilized React and Next.js for efficient client-side rendering and seamless page transitions.}
+    \resumeItem{Integrated Tailwind CSS for responsive and aesthetically pleasing design.}
+    \resumeItem{Implemented dynamic content rendering using React hooks to manage state transitions and UI updates.}
+    \resumeItem{Featured sections include detailed project descriptions, a downloadable resume, and contact information, accessible at \href{https://www.allenli-portfolio.com}{allenli-portfolio.com}.}
+  \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Library Microservices} $|$ \emph{Python, Flask, Kafka, Docker, MySQL, Nginx}}{Sep 2023 -- Dec 2023}
+      \resumeItemListStart
+        \resumeItem{Architected a distributed library management system, optimizing for scalability and resilience.}
+        \resumeItem{Facilitated inter-service communication via Kafka, ensuring robust data exchange and system integrity.}
+        \resumeItem{Leveraged Docker for containerization, achieving consistent deployments and isolated environments.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Network Provisioning with Terraform and Ansible} $|$ \emph{Terraform, Ansible, AWS}}{Sep 2023 -- Dec 2023}
+      \resumeItemListStart
+        \resumeItem{Orchestrated a cloud-based infrastructure on AWS, utilizing Terraform for infrastructure as code practices.}
+        \resumeItem{Automated configuration and deployment of EC2 instances and network resources with Ansible, enhancing operational efficiency.}
+      \resumeItemListEnd
+
+  
+
+    \resumeProjectHeading
+      {\textbf{Flappy Patrick} $|$ \emph{Python, Pygame, Flask}}{Sep 2022 -- Dec 2022}
+      \resumeItemListStart
+        \resumeItem{Engineered a Flappy Bird clone, enhancing gameplay with real-time scoring and dynamic obstacles.}
+        \resumeItem{Devised APIs for game state management and score tracking, employing Flask for server-side logic.}
+        \resumeItem{Implemented JSON for efficient data serialization and storage, optimizing game performance.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+
+
+
+\end{document}

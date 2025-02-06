@@ -1,0 +1,182 @@
+%-------------------------
+% Resume in Latex
+% Author : Hao Li
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Additional custom settings here...
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Allen Li} \\ \vspace{1pt}
+    8800 Hazelbridge Way, Richmond, BC, V6X0S3 \\
+    \small 778-896-8628 $|$ \href{mailto:allenli9417@gmail.com}{\underline{allenli9417@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/allen-li-5667b8248}{\underline{linkedin.com/in/allen-li-5667b8248}} $|$
+    \href{https://github.com/Allenli33}{\underline{github.com/Allenli33}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {British Columbia Institute of Technology}{Vancouver, BC}
+      {Computer Information Technology Diploma (CIT) GPA:86/100}{Jan 2022 -- Dec 2023}
+      \resumeSubheading
+      {Kwantlen Polytechnic University}{Vancouver, BC}
+      {General Studies}{Sep. 2017 -- Sep 2019}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Flappy Patrick} $|$ \emph{Python, Pygame, Flask, HTML, JSON}}{Sep 2022 -- Dec 2022}
+      \resumeItemListStart
+        \resumeItem{Developed a Flappy Bird clone with Python and Pygame, featuring real-time scoring and gameplay mechanics.}
+        \resumeItem{Implemented a Flask server for score management and a web interface using HTML for score display.}
+        \resumeItem{Integrated JSON for data handling and storage, and managed HTTP requests for score updates.}
+        \resumeItem{Used object-oriented programming for effective game state and interaction management.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{GPA Calculator (Group Project)} $|$ \emph{Python, Flask, MongoDB, PyMongo, HTML, CSS, JavaScript}}{May 2022}
+      \resumeItemListStart
+        \resumeItem{Contributed to a collaborative GPA calculator, managing user data with Flask and MongoDB.}
+        \resumeItem{Focused on frontend development using HTML/CSS for a responsive user interface.}
+        \resumeItem{Implemented bcrypt for secure authentication and user registration features.}
+        \resumeItem{Scrum-based Agile methodologies for iterative development and team collaboration.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Library Microservices} $|$ \emph{Python, Flask, Kafka, Docker, MySQL, Nginx, Connexion, YAML  }}{Sep 2023 -- Dec 2023}
+      \resumeItemListStart
+        \resumeItem{Designed a library management system using a microservices architecture for various operational functions.}
+        \resumeItem{Used Kafka for inter-service communication and MySQL for data storage and retrieval.}
+        \resumeItem{Containerized services using Docker, ensuring consistent deployment across environments.}
+        \resumeItem{Configured Nginx for request routing and load balancing across microservices.}
+      \resumeItemListEnd
+
+      \resumeProjectHeading
+      {\textbf{Network Provisioning with Terraform and Ansible} $|$ \emph{Terraform, Ansible, AWS }}{Sep 2023 -- Dec 2023}
+      \resumeItemListStart
+        \resumeItem{Designed and provisioned an AWS-based infrastructure using Terraform for services including EC2, RDS, S3, and VPC.}
+        \resumeItem{Configured EC2 instances for web and backend services using Ansible, ensuring efficient and secure operations.}
+        \resumeItem{Automated setup of security groups, routing tables, and subnets to streamline network architecture.}
+        \resumeItem{Managed dynamic inventory and role-based configurations in Ansible for scalable deployment of services.}
+        \resumeItem{Developed Ansible playbooks for consistent and automated configuration of Nginx and MySQL services.}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {YVR World Dufry Duty-Free}{Vancouver, BC}
+      {Retail Sales}{August 2019 – April 2020}
+      \resumeItemListStart
+        \resumeItem{Demonstrated excellent service to customers with clothing, shoes and accessories.}
+        \resumeItem{Improved customer satisfaction and boosted sales record.}
+        \resumeItem{Built strong communication, teamwork skills and the ability to learn fast.}
+        \resumeItem{Managed cash and credit payments and adhered to cash handling policies and regulations.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd    % Add more projects here...
+
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, HTML, CSS, SQL, Bash} \\
+     \textbf{Frameworks/Libraries}{: Flask, React, Node.js, pandas, NumPy, Matplotlib} \\
+     \textbf{Tools \& Platforms}{: Docker, Kubernetes, Git, GitHub, GitLab, Terraform, Ansible, Azure Cloud, AWS (EC2, RDS, S3, VPC), Kafka, Pygame, MongoDB, PyMongo, MySQL, Nginx, Linux, Windows OS, VS Code, PyCharm, Virtual Machines, Google Cloud Platform} \\
+     \textbf{DevOps \& CI/CD}{: Jenkins, Gitlab-CI, Continuous Integration, Continuous Deployment} \\
+     \textbf{Methodologies}{: Agile, Scrum, Object-Oriented Programming (OOP), Microservices Architecture} \\
+     \textbf{Soft Skills}{: Strong communication, Team collaboration, Problem-solving, Fast learning, Adaptability, Fluent in English and Mandarin}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
