@@ -1,0 +1,174 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Additional custom settings here...
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Allen Li} \\ \vspace{1pt}
+    \small 778-896-8628 $|$ \href{mailto:allenli9417@gmail.com}{\underline{allenli9417@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/allen-li-5667b8248}{\underline{linkedin.com/in/allen-li-5667b8248}} $|$
+    \href{https://github.com/Allenli33}{\underline{github.com/Allenli33}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {British Columbia Institute of Technology}{Vancouver, BC}
+      {Computer Information Technology Diploma (CIT) GPA: 86/100}{Jan 2022 -- Dec 2023}
+    \resumeSubheading
+      {Kwantlen Polytechnic University}{Vancouver, BC}
+      {General Studies}{Sep. 2017 -- Sep 2019}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Impact North Shore}{North Vancouver, BC}
+      {IT Support Specialist}{Jan 2025 – Present}
+      \resumeItemListStart
+      \resumeItem{Troubleshoot and resolve cloud-based system issues across Microsoft 365 (Intune, Entra ID, Exchange Online), improving system reliability and reducing recurring incidents.}
+      \resumeItem{Investigate production issues using logs, PowerShell, and diagnostic tools; perform root cause analysis and implement long-term fixes.}
+      \resumeItem{Automate administrative and support workflows using PowerShell, reducing manual workload and improving operational efficiency.}
+      \resumeItem{Manage endpoint configuration and compliance through Intune, supporting secure and scalable device management.}
+      \resumeItem{Monitor and analyze support tickets, identifying recurring patterns and contributing to process improvements and documentation.}
+    \resumeItemListEnd
+      
+
+  \resumeSubHeadingListEnd    % Add more projects here...
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: \textbf{Python}, \textbf{JavaScript}, HTML/CSS, SQL, Bash, R} \\
+     \vspace{2mm}  % Adjust the space as needed
+
+     \textbf{Frameworks/Libraries}{: Flask, React, NextJS, Node.js, pandas, NumPy} \\
+     \vspace{2mm}  % Adjust the space as needed
+
+     \textbf{Tools \& Platforms}{: Docker, Kubernetes, Git, Postman, Apache-jmeter, Terraform, Ansible, Cloud Computing (AWS, Azure, Google Cloud), sonarqube Kafka, MongoDB, MySQL, Nginx, Linux} \\
+     \vspace{2mm}  % Adjust the space as needed
+
+     \textbf{DevOps \& CI/CD}{: Jenkins, GitLab-CI, emphasizing CI/CD practices for streamlined deployment processes} \\
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+  \resumeProjectHeading
+  {\textbf{Personal Web Portfolio} $|$ \emph{React, Next.js, Tailwind CSS}}{Recent Project}
+  \resumeItemListStart
+  \resumeItem{Developed a responsive web application using React and Next.js to showcase projects and technical skills.}
+  \resumeItem{Implemented dynamic UI components using React hooks for state management and improved user experience.}
+  \resumeItem{Integrated structured project data and optimized performance using Next.js features.}
+  \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Library Microservices} $|$ \emph{Python, Flask, Kafka, Docker, MySQL, Nginx}}{Sep 2023 -- Dec 2023}
+      \resumeItemListStart
+      \resumeItem{Designed and implemented a microservices-based system using Python and Flask to simulate distributed architecture.}
+      \resumeItem{Developed RESTful APIs for service communication and data processing across services.}
+      \resumeItem{Integrated Kafka for asynchronous messaging and reliable inter-service communication.}
+      \resumeItem{Containerized services using Docker to ensure consistent deployment and environment isolation.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Network Provisioning with Terraform and Ansible} $|$ \emph{Terraform, Ansible, AWS}}{Sep 2023 -- Dec 2023}
+      \resumeItemListStart
+      \resumeItem{Provisioned cloud infrastructure on AWS using Terraform, applying infrastructure-as-code principles.}
+      \resumeItem{Automated configuration and deployment of EC2 instances and networking resources using Ansible.}
+      \resumeItem{Reduced manual setup time and improved deployment consistency through automation.}
+      \resumeItemListEnd
+
+  
+
+    \resumeProjectHeading
+      {\textbf{Flappy Patrick} $|$ \emph{Python, Pygame, Flask}}{Sep 2022 -- Dec 2022}
+      \resumeItemListStart
+      \resumeItem{Developed a Python-based game with real-time scoring and dynamic gameplay features.}
+      \resumeItem{Built backend APIs using Flask for game state management and data handling.}
+      \resumeItem{Used JSON for efficient data serialization and optimized application performance.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+
+
+
+\end{document}
